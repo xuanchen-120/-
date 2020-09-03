@@ -1,0 +1,25 @@
+@extends('layouts.app')
+
+
+@section('css')
+<style type="text/css">
+body {
+    background: #fff;
+}
+</style>
+@endsection
+
+@section('content')
+<div class="content">
+    <div class="articlesTitle">
+        <p>{{ $article->title }}</p>
+        <div class="articlesTitle-time">
+            <span>{{ $article->created_at->toDateString() }}</span>
+            <p>游览次数：{{ $article->click }}</p>
+        </div>
+    </div>
+    <div class="articlesText">
+        {!! $article->content !!}
+    </div>
+</div>
+@endsection
