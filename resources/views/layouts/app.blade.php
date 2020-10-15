@@ -12,6 +12,15 @@
     <link rel="stylesheet" href="/assets/home/css/style.css?{{time()}}">
     @yield('css')
     @yield('js')
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?9b45e3ce514b0e82eac96400d71c074c";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
 
 </head>
 <body>

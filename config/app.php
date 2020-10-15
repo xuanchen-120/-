@@ -174,13 +174,7 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-        // 微信插件
-        Overtrue\LaravelWeChat\ServiceProvider::class,
-        // 短信发送
-        App\Facades\Sms\SmsServiceProvider::class,
-
         //数据库迁移
-        Xethron\MigrationsGenerator\MigrationsGeneratorServiceProvider::class,
         Spatie\Backup\BackupServiceProvider::class,
 
     ],
